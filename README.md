@@ -12,13 +12,13 @@ Supported Terminals:
 
 <pr>`x-terminal-emulator`
 <br>`xfce4-terminal`
-`gnome-terminal`
-`terminator`
-`alacritty`
-`konsole`
-`kitty`
-`xterm`
-`urxvt`
+<pr>`gnome-terminal`
+<br>`terminator`
+<pr>`alacritty`
+<br>`konsole`
+<pr>`kitty`
+<br>`xterm`
+<pr>`urxvt`
 
 # Thanks!
 Thanks to @ret-0 and @Exotic0015, I refracted their script, because it was (partially) broken.
