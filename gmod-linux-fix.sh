@@ -68,4 +68,6 @@ if ! grep -q 'gmod-linux-patcher' "$HL2_SH"; then
     sed -i 's/exec ${GAME_DEBUGGER} "${GAMEROOT}"\/${GAMEEXE} "$@"/# gmod-linux-patcher\n        exec ${GAME_DEBUGGER} "${GAMEROOT}"\/${GAMEEXE} -malloc=system -swapcores -dxlevel 98 -vulkan "$@"/g' "$HL2_SH"
 fi
 
+# Original Script by ret-o and Exotic0015. wayzaction only modified and fixed the script!
+
 echo "> Done!"
