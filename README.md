@@ -21,4 +21,4 @@ Supported Terminals:
 <pr>`urxvt`<pr>
 
 # Thanks!
-Thanks to @ret-0 and @Exotic0015, I refracted their script, because it was (partially) broken.
+Thanks to @ret-0 and @Exotic0015, I fixed and modified their script, because it was (partially) broken.
