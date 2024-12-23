@@ -10,9 +10,15 @@ Unfortunately, not every terminal supports this script, so you may be forced to 
 
 Supported Terminals:
 
-kitty
+`x-terminal-emulator
+xfce4-terminal
+gnome-terminal
+terminator
 alacritty
-
+konsole
+kitty
+xterm
+urxvt`
 
 # Thanks!
 Thanks to @ret-0 and @Exotic0015, I refracted their script, because it was (partially) broken.
