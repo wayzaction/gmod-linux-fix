@@ -11,7 +11,7 @@ Unfortunately, not every terminal supports this script, so you may be forced to 
 Supported Terminals:
 
 <pr>`x-terminal-emulator`
-`xfce4-terminal`
+<br>`xfce4-terminal`
 `gnome-terminal`
 `terminator`
 `alacritty`
