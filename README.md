@@ -10,15 +10,15 @@ Unfortunately, not every terminal supports this script, so you may be forced to 
 
 Supported Terminals:
 
-<pr>`x-terminal-emulator`
-<br>`xfce4-terminal`
-<pr>`gnome-terminal`
-<br>`terminator`
-<pr>`alacritty`
-<br>`konsole`
-<pr>`kitty`
-<br>`xterm`
-<pr>`urxvt`
+<pr>`x-terminal-emulator`<pr>
+<br>`xfce4-terminal`<br>
+<pr>`gnome-terminal`<pr>
+<br>`terminator`<br>
+<pr>`alacritty`<pr>
+<br>`konsole`<br>
+<pr>`kitty`<pr>
+<br>`xterm`<br>
+<pr>`urxvt`<pr>
 
 # Thanks!
 Thanks to @ret-0 and @Exotic0015, I refracted their script, because it was (partially) broken.
