@@ -2,8 +2,8 @@
 Make the native GMod version playable. The only fix you'd ever need.
 
 # Installation
-Paste the command in your terminal:
-`wget https://raw.githubusercontent.com/wayzaction/gmod-linux-fix/main/gmod-linux-fix.sh && sh gmod-linux-fix`
+Paste the following command in your terminal:
+`wget -q https://raw.githubusercontent.com/wayzaction/gmod-linux-fix/refs/heads/main/gmod-linux-fix.sh && sh gmod-linux-fix.sh`
 
 # Terminal Compatibility
 Unfortunately, not every terminal supports this script, so you may be forced to manually execute GModCEFCodecFix.
