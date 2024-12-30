@@ -25,26 +25,15 @@ read -r
 
 echo "> Patching $DIRECTORY!"
 
-echo "> Downloading GModCEFCodecFix... (!!! GModCEFCodecFix will ask you if you want to launch the game. Write "no" !!!)"
+echo "> Downloading GModCEFCodecFix..."
 CEF_FIX_URL="https://github.com/solsticegamestudios/GModCEFCodecFix/releases/latest/download/GModCEFCodecFix-Linux"
 CEF_FIX_PATH="/tmp/GModCEFCodecFix-Linux"
 
 wget -q "$CEF_FIX_URL" -O "$CEF_FIX_PATH"
 chmod +x "$CEF_FIX_PATH"
 
-# Ensure a terminal emulator is used to execute the fix (It fucking sucks)
-TERMINAL=$(command -v x-terminal-emulator || command -v gnome-terminal || command -v konsole || command -v alacritty || command -v xterm || command -v kitty || command -v terminator || command -v urxvt || command -v xfce4-terminal)
-if [ -z "$TERMINAL" ]; then
-    echo "No compatible terminal emulator found! Please run GModCEFCodecFix manually:"
-    echo "$CEF_FIX_PATH"
-    exit 1
-fi
-
-$TERMINAL -e "$CEF_FIX_PATH" || {
-    echo "Failed to launch terminal emulator. Please run GModCEFCodecFix manually:"
-    echo "$CEF_FIX_PATH"
-    exit 1
-}
+# Using 'script' tricks isatty() so we don't have to open another terminal. It also allows us to answer those interactive prompts.
+script -qefc "$CEF_FIX_PATH" /dev/null < <(printf 'no\n\n')
 
 # Update valve.rc
 VALVE_RC="$DIRECTORY/garrysmod/cfg/valve.rc"
@@ -68,6 +57,6 @@ if ! grep -q 'gmod-linux-patcher' "$HL2_SH"; then
     sed -i 's/exec ${GAME_DEBUGGER} "${GAMEROOT}"\/${GAMEEXE} "$@"/# gmod-linux-patcher\n        exec ${GAME_DEBUGGER} "${GAMEROOT}"\/${GAMEEXE} -malloc=system -swapcores -dxlevel 98 -vulkan "$@"/g' "$HL2_SH"
 fi
 
-# Original Script by ret-o and Exotic0015. wayzaction only modified and fixed the script!
+# Original Script by ret-0 and Exotic0015. wayzaction only modified and fixed the script!
 
 echo "> Done!"
