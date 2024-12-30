@@ -12,3 +12,7 @@ Paste the following command in your terminal:
 
 # Thanks!
 Thanks to @ret-0 and @Exotic0015, I fixed and modified their script, because it was (partially) broken.
+
+# The only issue with native GMod
+For some unknown reason, certain addons may cause FPS drops when you join a server. Unfortunately, there’s no permanent solution to this issue.
+Switching your resolution from fullscreen to borderless (or vice versa) can temporarily restore normal FPS. However, you’ll need to repeat this process each time you connect to a server with such addons. For example, the Modern Warfare Base Weapons addon causes FPS drops for me.
