@@ -11,7 +11,7 @@ Paste the following command in your terminal:
 `wget -q https://raw.githubusercontent.com/wayzaction/gmod-linux-fix/refs/heads/main/gmod-linux-fix.sh && sh gmod-linux-fix.sh`
 
 # Thanks!
-Thanks to @ret-0 and @Exotic0015, I fixed and modified their script, because it was (partially) broken.
+Thanks to **@ret-0** and **@Exotic0015**, I fixed and modified their script, because it was (partially) broken.
 
 # The only issue with native GMod
 For some unknown reason, certain addons may cause FPS drops when you join a server. Unfortunately, there’s no permanent solution to this issue.
