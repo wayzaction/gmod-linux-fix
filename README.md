@@ -18,4 +18,4 @@ For some unknown reason, certain addons may cause FPS drops when you join a serv
 
 Switching your resolution from fullscreen to borderless (or vice versa) can temporarily restore normal FPS. 
 However, you’ll need to repeat this process each time you connect to a server with such addons. 
-For example, the Modern Warfare Base Weapons addon causes FPS drops for me.
+For example, the Modern Warfare Base Weapons addon causes FPS drops for me (But not for my friend, that's weird).
